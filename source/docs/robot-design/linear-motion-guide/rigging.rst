@@ -27,9 +27,11 @@ When the motor rotates one direction, the extension spool reels in the
 extension string, so it becomes shorter.
 In doing so, the distance between the top of one stage and the bottom of the
 next stage decreases, causing the system to extend.
-Note that **the last stage always extends and retracts before the other stages
-(this can be either an advantage or a disadvantage,
+Note that **the last stage usually extends and before the other stages, and
+retracts after (this can be either an advantage or a disadvantage,
 depending on the application)**.
+This is not always the case; under certain conditions, friction from bearings
+or sliders can cause the system to extend and retract stages in a different order.
 Once the last stage hits its limit, the next to last stage extends outwards,
 and so on; the pattern repeats until every stage is fully extended.
 When the motor spins **in the opposite direction**,
@@ -159,7 +161,7 @@ Disadvantages
 ^^^^^^^^^^^^^
 
 * Requires more string
-  (less strings to tension, less strings that can become loose)
+  (more strings to tension, more strings that can become loose)
 
 Additional Considerations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
